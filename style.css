@@ -34,6 +34,7 @@ body {
     width: 270px;
     border-radius: 8px;
     box-shadow: 1px 1px 10px black;
+    /* display: none; */
 }
 
 .header {
@@ -200,4 +201,79 @@ body {
 .show_result_btn:hover {
     background-color: #fff;
     color: var(--box-color) ;
+}
+
+.modal {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 270px;
+    height: 65vh;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.modal .title {
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    font-size: 1.5rem;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 80%;
+    height: 35vh;
+    border-radius: 5px;
+    position: absolute;
+    left: 1.5rem;
+    top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mini_desc {
+    position: absolute;
+    top: 2rem;
+    left: auto;
+    color: #E81D58;
+    font-weight: 100;
+}
+
+#ibm_calc {
+    position: absolute;
+    top: 3rem;
+    left: auto;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #E81D58;
+}
+
+#ex_desc {
+    position: absolute;
+    top: 8.5rem;
+    left: auto;
+    font-size: .8rem;
+    text-align: center;
+}
+
+#ex_span {
+    font-size: .9rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#suggest {
+    position: absolute;
+    top: 12rem;
+    text-align: center;
+    font-size: .9rem;
+    margin: 0 1rem;
 }
