@@ -5,9 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>BMI calculator</title>
 </head>
 <body>
+    <div class="card1">
+        <div class="header">
+            <i class="bi bi-list"></i>
+            <span>BMI CALCULATOR</span>
+        </div>
+        <div id="main">
+            <div class="gender">
+                <div class="box">
+                    <i class="bi bi-gender-male"></i>
+                    <span class="detail">MALE</span>
+                </div>
+                <div class="box">
+                    <i class="bi bi-gender-female fa-5x"></i>
+                    <span class="detail">FEMALE</span>
+                </div>
+            </div>
+            <div class="box height">
+                <span class="detail">HEIGHT(cm)</span>
+                <input type="text" maxlength="3"/>
+            </div>
+            <div class="get_data">
+                <div class="box">
+                    <span class="detail">WEIGHT(kg)</span>
+                    <p class="show_data" id="weight">50</p>
+                    <div class="buttons">
+                        <button class="data_btn" id="incs_weight">+</button>
+                        <button class="data_btn" id="redu_weight">-</button>
+                    </div> 
+                </div>
+                <div class="box">
+                    <span class="detail">AGE</span>
+                    <p class="show_data" id="age">25</p>
+                    <div class="buttons"><button class="data_btn" id="incs_age">+</button>
+                    <button class="data_btn" id="redu_age">-</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <button class="show_result_btn">CALCULATE YOUR BMI</button>
+    </div>
+
     <script src="./main.js"></script>
 </body>
 </html>
