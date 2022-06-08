@@ -16,11 +16,11 @@
         </div>
         <div id="main">
             <div class="gender">
-                <div class="box">
+                <div class="box" id="male" onclick="colorBox(event)">
                     <i class="bi bi-gender-male"></i>
                     <span class="detail">MALE</span>
                 </div>
-                <div class="box">
+                <div class="box" id="female" onclick="colorBox(event)">
                     <i class="bi bi-gender-female fa-5x"></i>
                     <span class="detail">FEMALE</span>
                 </div>
@@ -47,17 +47,17 @@
                 </div>
             </div>
         </div>
-        <button class="show_result_btn">CALCULATE YOUR BMI</button>
+        <button class="show_result_btn" onclick="calculate()">CALCULATE YOUR BMI</button>
     </div>
     <div class="modal">
         <p class="title">Your Result</p>
         <div class="main">
             <p id="mini_desc">Normal</p>
             <p id="ibm_calc">23.8</p>
-            <p id="ex_desc"><span id="ex_span">suggest BMI range</span>18.5~24.0 kg/m2</p>
+            <p id="ex_desc"><span id="ex_span">suggest BMI range</span>18.5~24.9 kg/m2</p>
             <p id="suggest">You have a normal body weight. Good job!</p>
         </div>
-        <button class="show_result_btn">RE-CALCULATE YOUR BMI</button>
+        <button class="show_result_btn" onclick="changeCard()">RE-CALCULATE YOUR BMI</button>
     </div>
 
     <script src="./main.js"></script>
